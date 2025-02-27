@@ -1,21 +1,15 @@
 function changeBackgroundColor(color) {
-    document.body.style.backgroundColor = color; // Change to the selected color
+    document.body.style.backgroundColor = color;
 }
 
 function changeFontSize(size) {
-    document.body.style.fontSize = size; // Change to the selected font size
+    document.body.style.fontSize = size;
 }
 
 function changeFont(font) {
-    document.body.style.fontFamily = font; // Change to the selected font
+    document.body.style.fontFamily = font;
 }
 
-// Ensure the customization menu is not affected
-const customizationMenu = document.getElementById('customizationMenu');
-customizationMenu.style.backgroundColor = 'white'; // Set a default background for the menu
-
-
-// Event listeners for buttons
 document.querySelectorAll('.color-button').forEach(button => {
     button.addEventListener('click', () => changeBackgroundColor(button.dataset.color));
 });

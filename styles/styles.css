@@ -1,7 +1,7 @@
 body {
     font-family: Arial, sans-serif;
-    margin: 0; /* Remove left space */
-    padding: 50px 0px 50px; /* Adjust padding to account for fixed navbar */
+    margin: 0;
+    padding: 50px 0px 50px;
     background-color: #f4f4f4;
 }
 
@@ -11,16 +11,16 @@ nav {
     position: fixed;
     top: 0;
     width: 100%;
-    display: flex; /* Added to enable flexbox */
-    justify-content: center; /* Center the buttons */
-    z-index: 1000; /* Ensure navbar is above other content */
+    display: flex;
+    justify-content: center;
+    z-index: 1000;
 }
 
 nav button {
     margin-right: 15px;
     padding: 10px 15px;
     border: none;
-    background-color: #333; /* Match button color with navbar */
+    background-color: #333;
     color: white;
     cursor: pointer;
 }
@@ -31,18 +31,17 @@ nav a {
     color: #007bff;
 }
 
-/* Modal styles */
 .modal {
-    display: none; /* Hidden by default */
-    position: fixed; /* Stay in place */
-    z-index: 1000; /* Sit on top */
+    display: none;
+    position: fixed;
+    z-index: 1000;
     left: 0;
     top: 0;
-    width: 100%; /* Full width */
-    height: 100%; /* Full height */
-    overflow: auto; /* Enable scroll if needed */
-    background-color: rgb(0,0,0); /* Fallback color */
-    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0,0,0);
+    background-color: rgba(0,0,0,0.4);
 }
 
 .modal-content {
@@ -53,32 +52,31 @@ nav a {
     margin: auto;
 }
 
-/* Personalization Menu styles */
 .personalizationMenu {
-    display: grid; /* Use grid layout */
-    grid-template-columns: repeat(5, 1fr); /* 5 columns */
-    grid-template-rows: repeat(5, 1fr); /* 5 rows */
-    gap: 5px; /* Space between buttons */
-    position: absolute; /* Position the menu absolutely */
-    top: 55px; /* Position from the top */
-    left: 56%; /* Center horizontally */
-    transform: translateX(-50%); /* Adjust for centering */
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    position: absolute;
+    top: 55px;
+    left: 56%;
+    transform: translateX(-50%);
     border: 2px solid black;
-    padding: 5px; /* Reduced padding */
-    width: 164px; /* Set width to a smaller size */
-    height: 90px; /* Fixed height to maintain size */
-    font-size: 12px; /* Fixed font size for the menu */
-    font-family: Arial, sans-serif; /* Fixed font family for the menu */
+    padding: 5px;
+    width: 164px;
+    height: 90px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
 }
 
 .personalizationMenu button {
-    width: 30px; /* Set button width */
-    height: 30px; /* Set button height */
-    font-size: 12px; /* Adjust font size for small buttons */
+    width: 30px;
+    height: 30px;
+    font-size: 12px;
 }
 
 .color-button {
-    background-color: transparent; /* Default background */
+    background-color: transparent;
 }
 
 .color-button[data-color="#FFB3BA"] {
@@ -99,4 +97,44 @@ nav a {
 
 .color-button[data-color="#BAE1FF"] {
     background-color: #BAE1FF;
+}
+
+form h1 {
+    text-align: center; /* Center the title */
+}
+/* Styles for the form */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+form button {
+    width: 100%;
+    padding: 10px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+form button:hover {
+    background-color: #0056b3;
 }
