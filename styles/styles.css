@@ -1,0 +1,102 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0; /* Remove left space */
+    padding: 50px 0px 50px; /* Adjust padding to account for fixed navbar */
+    background-color: #f4f4f4;
+}
+
+nav {
+    background-color: #333;
+    padding: 10px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex; /* Added to enable flexbox */
+    justify-content: center; /* Center the buttons */
+    z-index: 1000; /* Ensure navbar is above other content */
+}
+
+nav button {
+    margin-right: 15px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #333; /* Match button color with navbar */
+    color: white;
+    cursor: pointer;
+}
+
+nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007bff;
+}
+
+/* Modal styles */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1000; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 80%;
+    margin: auto;
+}
+
+/* Personalization Menu styles */
+.personalizationMenu {
+    display: grid; /* Use grid layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 columns */
+    grid-template-rows: repeat(5, 1fr); /* 5 rows */
+    gap: 5px; /* Space between buttons */
+    position: absolute; /* Position the menu absolutely */
+    top: 55px; /* Position from the top */
+    left: 56%; /* Center horizontally */
+    transform: translateX(-50%); /* Adjust for centering */
+    border: 2px solid black;
+    padding: 5px; /* Reduced padding */
+    width: 164px; /* Set width to a smaller size */
+    height: 90px; /* Fixed height to maintain size */
+    font-size: 12px; /* Fixed font size for the menu */
+    font-family: Arial, sans-serif; /* Fixed font family for the menu */
+}
+
+.personalizationMenu button {
+    width: 30px; /* Set button width */
+    height: 30px; /* Set button height */
+    font-size: 12px; /* Adjust font size for small buttons */
+}
+
+.color-button {
+    background-color: transparent; /* Default background */
+}
+
+.color-button[data-color="#FFB3BA"] {
+    background-color: #FFB3BA;
+}
+
+.color-button[data-color="#FFDFBA"] {
+    background-color: #FFDFBA;
+}
+
+.color-button[data-color="#FFFFBA"] {
+    background-color: #FFFFBA;
+}
+
+.color-button[data-color="#BAFFC9"] {
+    background-color: #BAFFC9;
+}
+
+.color-button[data-color="#BAE1FF"] {
+    background-color: #BAE1FF;
+}

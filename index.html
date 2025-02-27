@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles/styles.css">
+    <script src="scripts/scripts.js" defer></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('customizationMenu');
+            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</head>
+<body>
+    <h1>Bienvenido a la Página</h1>
+    <p>Este es un ejemplo de contenido en la página principal.</p>
+    <nav>
+        <button onclick="location.href='form.html'">Register</button>
+        <button onclick="location.href='images.html'">Images</button>
+        <button onclick="toggleMenu()">Personalizar</button>
+    </nav>
+    <div id="customizationMenu" class="personalizationMenu" style="display: none;">
+        <button class="color-button" data-color="#FFB3BA"></button>
+        <button class="color-button" data-color="#FFDFBA"></button>
+        <button class="color-button" data-color="#FFFFBA"></button>
+        <button class="color-button" data-color="#BAFFC9"></button>
+        <button class="color-button" data-color="#BAE1FF"></button>
+        
+        <button class="size-button" data-size="xx-large">XL</button>
+        <button class="size-button" data-size="large">L</button>
+        <button class="size-button" data-size="medium">M</button>
+        <button class="size-button" data-size="small">S</button>
+        <button class="size-button" data-size="x-small">XS</button>
+        
+        <button class="font-button" data-font="Arial">A</button>
+        <button class="font-button" data-font="Courier New">C</button>
+        <button class="font-button" data-font="Georgia">G</button>
+        <button class="font-button" data-font="Times New Roman">T</button>
+        <button class="font-button" data-font="Verdana">V</button>
+    </div>
+
+    <div id="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <h2>Personalización</h2>
+            <button onclick="changeBackgroundColor()">Cambiar Color de Fondo</button>
+            <button onclick="changeFontSize()">Cambiar Tamaño de Fuente</button>
+            <button onclick="changeFont()">Cambiar Fuente</button>
+        </div>
+    </div>
+</body>
+</html>
